@@ -1,0 +1,242 @@
+/* ====  RESET ==== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --c-white: #fff;
+  --c-gray-lightest: #FBF8F3;
+  --c-gray-light: #6B6B6B;
+  --c-gray-dark: #211E19;
+}
+
+/* ====  BASE ==== */
+html, body { 
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  color: var(--c-gray-light);
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.text-light {
+  color: var(--c-gray-light);
+}
+.text-dark {
+  color: var(--c-gray-dark);
+}
+
+/* ====  HERO ==== */
+#hero {
+  background-image: url("imgs/where_is_nihon.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh;
+  color: var(--c-white);
+}
+
+.title {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+#logo {
+  width: 305px;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* ====  INTRO ==== */
+#intro {
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+}
+
+#intro p {
+  width: 740px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+/* ====  MOVIES ==== */
+#movies {
+  background-color: teal; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#movies a {
+  text-decoration: none;
+  color: var(--c-white);
+}
+
+.movie {
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.movie h2 {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--c-white);
+  margin-bottom: 0;
+}
+.movie div {
+  width: 700px;
+}
+
+.movie1 {
+  background-image: url("imgs/where_is_nihon-3.jpg");
+}
+
+.movie2 {
+  background-image: url("imgs/as_origens_2.jpg");
+}
+
+.movie3 {
+  background-image: url("imgs/where_is_nihon-3.jpg");
+}
+
+.movie4 {
+  background-image: url("imgs/misericordia_1.jpg");
+}
+
+#about {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+
+/*====  LORENA ==== */
+#lorena {
+  display: flex;
+  flex-direction: row;
+}
+
+
+section#lorena {
+ background-color: var(--c-gray-dark);
+}
+
+#lorena p {
+  line-height: 1.5;
+  color: var(--c-white);
+  width: 700px;
+  padding-bottom: 10rem;
+  padding-left: 3.6rem;
+}
+
+#lorena div img {
+  width: 360px;
+  padding-left: 8.6rem;
+  padding-top: 8.6rem;
+}
+
+/* ====  CONTATO ==== */
+div #email {
+  margin-bottom: 3rem;
+
+}
+
+#email p {
+font-family: 'Inter', sans-serif;
+font-size: 1.2rem;
+text-transform: uppercase;
+margin-bottom: 0.5rem;
+}
+
+#email a {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  color: var(--c-gray-dark);
+}
+
+#zap p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  }
+
+  #zap a {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+    color: var(--c-gray-dark);
+  
+  }
+
+  #footer {
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 8.6rem;
+    background-color: #FBF8F3;
+  }
+
+  /* ====  LOGO ==== */
+
+  #logofooter {
+    background-color: var(--c-gray-dark); 
+  display: flex;
+  padding-top:  2rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  }
+
+  .logo {
+    width: 100px;
+  }
+
