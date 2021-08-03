@@ -139,8 +139,17 @@ p {
 }
 
 #movies a {
+  transition: all .2s ease;
+}
+#movies a:hover {
+  transform: translateX(5px);
+}
+
+#movies a p {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: var(--c-white);
+  margin-left: 1px;
 }
 
 .movie {
@@ -185,6 +194,19 @@ p {
   background-image: url("imgs/misericordia_1.jpg");
 }
 
+@media (min-width: 800px) {
+  .movie {
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+  .movie h2 {
+    font-size: 10rem;
+  }
+  #movies a p {
+    margin-left: 3px;
+  }
+}
+/* ==== ABOUT ==== */
 #about {
   max-width: 700px;
   width: 80%;
@@ -194,13 +216,6 @@ p {
 }
 
 @media (min-width: 800px) {
-  .movie {
-    height: 100vh;
-    padding-bottom: 5rem;
-  }
-  .movie h2 {
-    font-size: 10rem;
-  }
   #about {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -276,8 +291,8 @@ p {
 /* ====  CONTATO ==== */
 
 #contato {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: var(--c-gray-lightest);
 }
 
@@ -306,6 +321,10 @@ margin-bottom: 0.25rem;
 }
 
 @media (min-width: 800px) {
+  #contato {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
   #contato p {
     font-size: 1.5rem;
   }
@@ -319,8 +338,8 @@ margin-bottom: 0.25rem;
 #footer {
   background-color: var(--c-white); 
   display: flex;
-  padding-top:  2rem;
-  padding-bottom: 2rem;
+  padding-top:  5rem;
+  padding-bottom: 5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
@@ -329,4 +348,8 @@ margin-bottom: 0.25rem;
 .logo {
   width: 100px;
 }
-
+@media (min-width: 800px) {
+  .logo {
+    width: 140px;
+  }
+}
