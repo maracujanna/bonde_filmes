@@ -99,6 +99,17 @@ p {
   width: 200px;
 }
 
+#line {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 136px;
+  background: var(--c-white);
+}
+
+
 @media (min-width: 800px) {
   #logo {
     width: 240px;
