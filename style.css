@@ -51,9 +51,34 @@ h2 {
   color: var(--c-gray-dark);
 }
 
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 800px) {
+  h2 {
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
 /* ====  HERO ==== */
 #hero {
   background-image: url("imgs/where_is_nihon.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,34 +91,42 @@ h2 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .5em;
+  text-align: center;
+  margin-left: 12px;
 }
 
 #logo {
-  width: 305px;
+  width: 200px;
 }
 
-h2 {
-  margin-bottom: 2rem;
-}
-
-p {
-  font-family: "Libre Baskerville", serif;
-  font-size: 2rem;
-  line-height: 1.5;
+@media (min-width: 800px) {
+  #logo {
+    width: 240px;
+  }
 }
 
 /* ====  INTRO ==== */
 #intro {
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #intro p {
-  width: 740px;
+  max-width: 700px;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 1.5em;
+}
+
+@media (min-width: 800px) {
+  #intro {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  }
+  #logo {
+    width: 240px;
+  }
 }
 
 /* ====  MOVIES ==== */
@@ -111,7 +144,7 @@ p {
 }
 
 .movie {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -119,19 +152,21 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 .movie h2 {
   font-family: 'Six Caps', sans-serif;
-  font-size: 10rem;
+  font-size: 6rem;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   color: var(--c-white);
   margin-bottom: 0;
 }
-.movie div {
-  width: 700px;
+
+.movie-content {
+  max-width: 700px;
+  width: 80%;
 }
 
 .movie1 {
@@ -151,92 +186,147 @@ p {
 }
 
 #about {
-  width: 700px;
+  max-width: 700px;
+  width: 80%;
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
+@media (min-width: 800px) {
+  .movie {
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+  .movie h2 {
+    font-size: 10rem;
+  }
+  #about {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
 
 /*====  LORENA ==== */
 #lorena {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: var(--c-gray-dark);
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-
-section#lorena {
- background-color: var(--c-gray-dark);
+#lorena > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 #lorena p {
-  line-height: 1.5;
   color: var(--c-white);
-  width: 700px;
-  padding-bottom: 10rem;
-  padding-left: 3.6rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 700px;
+  width: 80%;
 }
 
-#lorena div img {
-  width: 360px;
-  padding-left: 8.6rem;
-  padding-top: 8.6rem;
+#lorena img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
 }
+
+@media (min-width: 800px) {
+  #lorena > div {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #lorena img {
+    width: 200px;
+    height: 200px;
+  }
+  #lorena p {
+    font-size: 1.2rem;
+    padding-left: 3rem;
+  }
+  
+}
+@media (min-width: 1000px) {
+
+  #lorena img {
+    width: 300px;
+    height: 300px;
+  }
+  #lorena p {
+    font-size: 1.5rem;
+    padding-left: 3.6rem;
+  }
+}
+
 
 /* ====  CONTATO ==== */
-div #email {
+
+#contato {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: var(--c-gray-lightest);
+}
+
+#contato .wrapper {
+  max-width: 700px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#email {
   margin-bottom: 3rem;
-
 }
 
-#email p {
+#contato p {
 font-family: 'Inter', sans-serif;
-font-size: 1.2rem;
+font-size: 1rem;
 text-transform: uppercase;
-margin-bottom: 0.5rem;
+color: var(--c-gray-light);
+margin-bottom: 0.25rem;
 }
 
-#email a {
+#contato a {
   font-family: "Libre Baskerville", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--c-gray-dark);
 }
 
-#zap p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+@media (min-width: 800px) {
+  #contato p {
+    font-size: 1.5rem;
   }
-
-  #zap a {
-    font-family: "Libre Baskerville", serif;
-    font-size: 2rem;
-    color: var(--c-gray-dark);
-  
+  #contato a {
+    font-size: 3rem;
   }
+}
 
-  #footer {
-    margin: 0 auto;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 8.6rem;
-    background-color: #FBF8F3;
-  }
+/* ====  LOGO ==== */
 
-  /* ====  LOGO ==== */
-
-  #logofooter {
-    background-color: var(--c-gray-dark); 
+#footer {
+  background-color: var(--c-white); 
   display: flex;
   padding-top:  2rem;
   padding-bottom: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-  }
+}
 
-  .logo {
-    width: 100px;
-  }
+.logo {
+  width: 100px;
+}
 
